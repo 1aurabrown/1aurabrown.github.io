@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <div class="images-grid">
+    {% for image_path in site.data.images %}
+      <div class="image"><img src="{{ image_path | asset_path }}" /></div>
+    {% endfor %}
+  </div>
+
+</div>
