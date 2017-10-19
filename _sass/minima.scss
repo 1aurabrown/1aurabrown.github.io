@@ -3,6 +3,20 @@
 // Define defaults for each variable.
 
 $base-font-family: 'M', sans-serif;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  0.875em !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #000 !default;
+$background-color: #fff !default;
+$brand-color:      #000 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
 $content-width:    800px !default;
@@ -18,9 +32,38 @@ $on-laptop:        800px !default;
 //   }
 // }
 
+@font-face {
+  font-family: 'M';
+  src: url('font/mplus-1m-light-sub.eot');
+  src: url('font/mplus-1m-light-sub.eot?#iefix') format('embedded-opentype'),
+  url('font/mplus-1m-light-sub.woff') format('woff'),
+  url('font/mplus-1m-light-sub.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M';
+  src: url('font/mplus-1m-regular-sub.eot');
+  src: url('font/mplus-1m-regular-sub.eot?#iefix') format('embedded-opentype'),
+  url('font/mplus-1m-regular-sub.woff') format('woff'),
+  url('font/mplus-1m-regular-sub.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
   }
 }
 
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;
