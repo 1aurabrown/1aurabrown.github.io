@@ -2,17 +2,17 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: 'M', sans-serif;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size:  0.875em !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$text-color:       #000 !default;
+$background-color: #fff !default;
+$brand-color:      #000 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -31,6 +31,26 @@ $on-laptop:        800px !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
+
+@font-face {
+  font-family: 'M';
+  src: url('font/mplus-1m-light-sub.eot');
+  src: url('font/mplus-1m-light-sub.eot?#iefix') format('embedded-opentype'),
+  url('font/mplus-1m-light-sub.woff') format('woff'),
+  url('font/mplus-1m-light-sub.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M';
+  src: url('font/mplus-1m-regular-sub.eot');
+  src: url('font/mplus-1m-regular-sub.eot?#iefix') format('embedded-opentype'),
+  url('font/mplus-1m-regular-sub.woff') format('woff'),
+  url('font/mplus-1m-regular-sub.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
