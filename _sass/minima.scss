@@ -18,35 +18,9 @@ $on-laptop:        800px !default;
 //   }
 // }
 
-@font-face {
-  font-family: 'M';
-  src: url('font/mplus-1m-light-sub.eot');
-  src: url('font/mplus-1m-light-sub.eot?#iefix') format('embedded-opentype'),
-  url('font/mplus-1m-light-sub.woff') format('woff'),
-  url('font/mplus-1m-light-sub.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'M';
-  src: url('font/mplus-1m-regular-sub.eot');
-  src: url('font/mplus-1m-regular-sub.eot?#iefix') format('embedded-opentype'),
-  url('font/mplus-1m-regular-sub.woff') format('woff'),
-  url('font/mplus-1m-regular-sub.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
   }
 }
 
-
-// Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
