@@ -9,11 +9,11 @@ layout: default
   <div class="images-grid">
     {% for artwork in site.data.artworks %}
       {% assign file = site.static_files | where:"name", artwork.image | first %}
-      {% if file.image %}
-        <a class="image thumb" {% if artwork.url %} target="_blank" href="{{artwork.url}}" {% endif %}><div class="inner">
+      <a class="image thumb" {% if artwork.url %} target="_blank" href="{{artwork.url}}" {% endif %}>
+        <div class="inner">
           <img src="{{file.path}}" class=""/>
-        </div></a>
-      {% endif %}
+        </div>
+      </a>
     {% endfor %}
   </div>
 

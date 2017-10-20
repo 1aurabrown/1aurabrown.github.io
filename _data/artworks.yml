@@ -2,7 +2,7 @@
   image: clock.png
 -
   image: plant.png
-  url: http://localhost:4000/plants.html
+  url: /plants.html
 -
   image: laura_brown_008.jpg
 -
