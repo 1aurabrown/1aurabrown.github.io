@@ -38,7 +38,7 @@ sass:
 defaults:
   -
     scope:
-      path: "assets/images"
+      path: "assets/images/artworks"
     values:
       image: true
 

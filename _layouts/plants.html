@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+
+    <link href="assets/css/plants.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/js/plants.js"> </script>
+  </head>
+  <body class="plant">
+    {% assign sample = site.data.plants | sample %}
+    {% for image in site.data.plants %}
+      <div class="plant-background {% if image==sample %} true {% endif %}">
+        <img src="/assets/images/plants/{{image}}" alt="<%= block.title %>" />
+      </div>
+    {% endfor %}
+  </body>
+</html>

@@ -1,7 +1,11 @@
 $(function(){
   $('.images-grid .image.thumb').click(function(e){
     $el = $(e.currentTarget)
-    if($el.hasClass('expanded')){
+    expanded = $el.hasClass('expanded');
+    if (!expanded) {
+      e.preventDefault();
+    }
+    if(expanded){
       $el.removeClass('expanded');
     } else {
       $('.images-grid .image.expanded').removeClass('expanded');
