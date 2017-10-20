@@ -10,7 +10,9 @@ layout: default
     {% for image_path in site.data.images %}
       {% assign file = site.static_files | where:"name", image_path | first %}
       {% if file.image %}
-        <div class="image"><img src="{{file.path}}" class=""/></div>
+        <div class="image thumb"><div class="inner">
+          <img src="{{file.path}}" class=""/>
+        </div></div>
       {% endif %}
     {% endfor %}
   </div>
