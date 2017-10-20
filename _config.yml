@@ -26,10 +26,18 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+github: [metadata]
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
 plugins:
   - jekyll-feed
 sass:
   sass_dir: _sass
+defaults:
+  - scope:
+    path: "assets/images"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -7,7 +7,12 @@ layout: default
   {{ content }}
 
   <div class="images-grid">
-
+    {% for image_path in site.data.images %}
+      {% assign file = site.static_files | where:"name", image_path | first %}
+      {% if file.image == true %}
+         <div class="image"><img src={{file.path}}/></div>
+      {% endif %}
+    {% endfor %}
   </div>
 
 </div>
