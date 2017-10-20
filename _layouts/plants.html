@@ -9,9 +9,8 @@
     <script src="assets/js/plants.js"> </script>
   </head>
   <body class="plant">
-    {% assign sample = site.data.plants | sample %}
     {% for image in site.data.plants %}
-      <div class="plant-background {% if image==sample %} true {% endif %}">
+      <div class="plant-background">
         <img src="/assets/images/plants/{{image}}" alt="<%= block.title %>" />
       </div>
     {% endfor %}
