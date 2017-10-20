@@ -9,8 +9,8 @@ layout: default
   <div class="images-grid">
     {% for image_path in site.data.images %}
       {% assign file = site.static_files | where:"name", image_path | first %}
-      {% if file.image == true %}
-         <div class="image"><img src={{file.path}}/></div>
+      {% if file.image %}
+        <div class="image"><img src="{{file.path}}" class=""/></div>
       {% endif %}
     {% endfor %}
   </div>

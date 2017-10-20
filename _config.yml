@@ -36,8 +36,11 @@ plugins:
 sass:
   sass_dir: _sass
 defaults:
-  - scope:
-    path: "assets/images"
+  -
+    scope:
+      path: "assets/images"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
