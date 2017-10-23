@@ -1,5 +1,6 @@
 -
   image: clock.png
+  url: /clock.html
 -
   image: plant.png
   url: /plants.html

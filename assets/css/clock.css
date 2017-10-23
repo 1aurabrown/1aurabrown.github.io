@@ -1,0 +1,1 @@
+body{background:#000;display:flex;flex-wrap:wrap;justify-content:space-around;max-width:2000px;margin:auto}canvas{width:300px;margin:50px}@media screen and (max-width:1300px){canvas{width:200px;margin:30px}}
