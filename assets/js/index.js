@@ -1,6 +1,6 @@
 $(function(){
-  $('.images-grid .image.thumb').click(function(e){
-    $el = $(e.currentTarget)
+  $('.images-grid .image.thumb').on('click', '.inner', function(e){
+    $el = $(e.delegateTarget)
     expanded = $el.hasClass('expanded');
     if (!expanded) {
       e.preventDefault();
