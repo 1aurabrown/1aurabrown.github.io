@@ -2,6 +2,9 @@
   image: clock.png
   url: /clock.html
 -
+  image: fence.png
+  url: http://fences.surge.sh
+-
   image: plant.png
   url: /plants.html
 -
