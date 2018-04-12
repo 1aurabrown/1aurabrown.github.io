@@ -21,12 +21,7 @@ div, img {
   justify-content: center;
   img {
     object-fit: contain;
-    max-height: 195vh;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    transform: scale(0.5);
+    max-height: 80vh;
   }
   img:hover {
     pointer-events: none;
