@@ -1,6 +1,9 @@
 -
+  image: pendulum.jpg
+  url: https://left.gallery/pendulum
+-
   image: clock.png
-  url: /clock.html
+  url: https://timepiece.netlify.com/?allHands=0&ticks=0&radius=.9&dimension=200
 -
   image: fence.png
   url: http://fences.surge.sh
@@ -43,3 +46,5 @@
   image: 4_img1012.jpg
 -
   image: 4_smoke-alarm.jpg
+-
+  image: 4_shoes.jpg
